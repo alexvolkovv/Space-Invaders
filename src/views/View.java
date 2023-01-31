@@ -10,13 +10,13 @@ import java.awt.*;
 public class View extends JFrame implements Listener {
     private Controller controller;
     private ContentPanel contentPanel;
-    private KeyListener keyListener;
+    private KeyListener keyListener1;
 
     public View(Controller controller) {
         this.controller = controller;
         this.controller.addListener(this);
         this.contentPanel = new ContentPanel(controller);
-        this.keyListener = new KeyListener(controller);
+        this.keyListener1 = new KeyListener(controller);
 
         this.initializeFrame();
     }
@@ -28,7 +28,7 @@ public class View extends JFrame implements Listener {
         this.setLocation(350, 75);
         this.setTitle("Space Invaders");
         this.setResizable(false);
-        this.addKeyListener(this.keyListener);
+        this.addKeyListener(this.keyListener1);
         this.setContentPane(this.contentPanel);
         this.setBackground(Color.BLACK);
     }

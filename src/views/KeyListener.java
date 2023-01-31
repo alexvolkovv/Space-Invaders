@@ -6,7 +6,7 @@ import controllers.Controller;
 import java.awt.event.KeyEvent;
 
 public class KeyListener implements java.awt.event.KeyListener {
-
+    private Integer testInt;
     private Controller controller;
 
     public KeyListener(Controller controller) {

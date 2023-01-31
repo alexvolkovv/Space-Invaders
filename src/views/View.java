@@ -18,7 +18,7 @@ public class View extends JFrame implements Listener {
         this.contentPanel = new ContentPanel(controller);
         this.keyListener = new KeyListener(controller);
 
-//        this.initializeFrame();
+        this.initializeFrame();
     }
 
     private void initializeFrame() {
